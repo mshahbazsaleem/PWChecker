@@ -1,0 +1,115 @@
+﻿.strength-indicator
+{
+	width: 200px;
+	height: 120px;
+	position: absolute;
+	left: 400px;
+	top: 2px;
+	border-left: solid 2px gray;
+	padding: 8px 8px 8px 16px;
+	margin-left:4px;	
+}
+.strength-indicator
+{
+	line-height: 18px;
+}
+.meter
+{
+	display: block;
+	width: 160px;
+	height: 14px;
+	background-color: Gray;
+	background: #424042; /* Old browsers */
+	background: -moz-linear-gradient(left, #424042 0%, #f2f2f2 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#424042), color-stop(99%,#f2f2f2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #424042 0%,#f2f2f2 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #424042 0%,#f2f2f2 99%); /* Opera11.10+ */
+	background: -ms-linear-gradient(left, #424042 0%,#f2f2f2 99%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424042', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(left, #424042 0%,#f2f2f2 99%); /* W3C */
+	font-size: 12px;
+	padding: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-bottom: 15px;
+}
+.strong
+{
+	background-color: Green;
+	background: #ffff00; /* Old browsers */
+	background: -moz-linear-gradient(left, #ffff00 0%, #218400 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffff00), color-stop(100%,#218400)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #ffff00 0%,#218400 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #ffff00 0%,#218400 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(left, #ffff00 0%,#218400 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#218400',GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(left, #ffff00 0%,#218400 100%); /* W3C */
+}
+.medium
+{
+	background-color: orange;
+	background: #ffff00; /* Old browsers */
+	background: -moz-linear-gradient(left, #ffff00 0%, #f98900 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffff00), color-stop(100%,#f98900)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #ffff00 0%,#f98900 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #ffff00 0%,#f98900 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(left, #ffff00 0%,#f98900 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#f98900',GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(left, #ffff00 0%,#f98900 100%); /* W3C */
+}
+.week
+{
+	background-color: yellow;
+	background: #ffff00; /* Old browsers */
+	background: -moz-linear-gradient(left, #ffff00 0%, #fc1d00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffff00), color-stop(100%,#fc1d00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #ffff00 0%,#fc1d00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #ffff00 0%,#fc1d00 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(left, #ffff00 0%,#fc1d00 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#fc1d00',GradientType=1 ); /* IE6-9 */
+	background: linear-gradient(left, #ffff00 0%,#fc1d00 100%); /* W3C */
+}
+.no-match
+{
+	color: #FF7B78 !important;
+}
+.password-container
+{
+	width: 600px;
+	padding: 4px;
+	position: relative;
+}
+.password-container p
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 8px;
+}
+.password-container p label
+{
+	text-align: right;
+	display: inline-block;
+	width: 130px;
+	color: #6E6E6E;
+	font-size:14px;
+}
+.password-container p input[type=password]
+{
+	width: 250px;
+	height: 42px;
+	background-color: #232A34;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: none;
+	color: #fff;
+	font-size: 24px;
+}
+.password-container .info
+{
+	display: block;
+	color: Gray;
+	margin-left: 134px;
+}
+
