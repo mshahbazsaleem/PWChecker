@@ -1,7 +1,16 @@
 ﻿(function ($) {
     $.fn.extend({
         pschecker: function (options) {
-            var settings = $.extend({ minlength: 8, maxlength: 16, onPasswordValidate: null, onPasswordMatch: null }, options);
+            var settings = $.extend({
+                minlength: 8,
+                maxlength: 16,
+                weakText: "Weak",
+                mediumText: "Medium",
+                strongText: "Strong",
+                onPasswordValidate: null,
+                onPasswordMatch: null
+            }, options);
+
             return this.each(function () {
                 var wrapper = $('.password-container');
                 var password = $('.strong-password:eq(0)', wrapper);
@@ -20,12 +29,12 @@
                         settings.onPasswordValidate(pstr.length >= settings.minlength);
 
                     if (pstr.length < settings.maxlength)
-                        meter.removeClass('strong').removeClass('medium').removeClass('week');
+                        meter.removeClass('strong').removeClass('medium').removeClass('weak');
                     if (pstr.length > 0) {
                         var rx = new RegExp(/^(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{7,30}$/);
                         if (rx.test(pstr)) {
                             meter.addClass('strong');
-                            meter.html("Strong");
+                            meter.html(settings.strongText);
                         }
                         else {
                             var alpha = containsAlpha(pstr);
@@ -36,11 +45,11 @@
 
                             if (result > 2) {
                                 meter.addClass('medium');
-                                meter.html("Medium");
+                                meter.html(settings.mediumText);
                             }
                             else {
-                                meter.addClass('week');
-                                meter.html("Week");
+                                meter.addClass('weak');
+                                meter.html(settings.weakText);
                             }
                         }
                         if (cPassword.val().toString().length > 0) {
